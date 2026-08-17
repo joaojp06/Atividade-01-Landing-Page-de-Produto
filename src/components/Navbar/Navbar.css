@@ -1,0 +1,108 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background var(--dur-s) var(--ease-out), border-color var(--dur-s) var(--ease-out);
+}
+
+.navbar--scrolled {
+  background: rgba(8, 9, 10, 0.82);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--c-line);
+}
+
+.navbar__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 20px var(--page-pad);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.navbar__logo {
+  font-family: var(--f-display);
+  font-weight: 900;
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  color: var(--c-white);
+}
+
+.navbar__links {
+  display: flex;
+  gap: 36px;
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar__links a {
+  font-size: 0.88rem;
+  color: var(--c-grey);
+  transition: color var(--dur-s) var(--ease-out);
+}
+
+.navbar__links a:hover {
+  color: var(--c-white);
+}
+
+.navbar__cta {
+  display: flex;
+}
+
+.navbar__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 34px;
+  height: 34px;
+}
+
+.navbar__burger span {
+  display: block;
+  height: 1.5px;
+  background: var(--c-white);
+  transition: transform var(--dur-s) var(--ease-out), opacity var(--dur-s) var(--ease-out);
+}
+
+.navbar__burger.is-open span:first-child {
+  transform: translateY(3.75px) rotate(45deg);
+}
+.navbar__burger.is-open span:last-child {
+  transform: translateY(-3.75px) rotate(-45deg);
+}
+
+.navbar__mobile {
+  display: none;
+  flex-direction: column;
+  gap: 22px;
+  padding: 0 var(--page-pad) 28px;
+  background: rgba(8, 9, 10, 0.97);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--c-line);
+}
+
+.navbar__mobile a {
+  font-family: var(--f-display);
+  font-size: 1.1rem;
+  color: var(--c-white);
+}
+
+.navbar__mobile.is-open {
+  display: flex;
+}
+
+@media (max-width: 860px) {
+  .navbar__links,
+  .navbar__cta {
+    display: none;
+  }
+  .navbar__burger {
+    display: flex;
+  }
+}

@@ -1,0 +1,28 @@
+.size-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.size-selector__opt {
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--c-line-strong);
+  border-radius: var(--radius-s);
+  font-family: var(--f-mono);
+  font-size: 0.85rem;
+  color: var(--c-white);
+  transition: border-color var(--dur-s) var(--ease-out), background var(--dur-s) var(--ease-out),
+    color var(--dur-s) var(--ease-out);
+}
+
+.size-selector__opt:hover {
+  border-color: var(--c-white);
+}
+
+.size-selector__opt.is-active {
+  background: var(--c-volt);
+  border-color: var(--c-volt);
+  color: var(--c-black);
+  font-weight: 700;
+}

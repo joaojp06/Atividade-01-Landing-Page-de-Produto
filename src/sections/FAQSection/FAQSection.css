@@ -1,0 +1,30 @@
+.faq-section {
+  background: var(--c-charcoal);
+  border-top: 1px solid var(--c-line);
+}
+
+.faq-section__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: clamp(32px, 6vw, 72px);
+}
+
+.faq-section__title {
+  font-family: var(--f-display);
+  font-weight: 800;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-top: 16px;
+}
+
+.faq-section__text {
+  margin-top: 16px;
+  color: var(--c-grey);
+  max-width: 34ch;
+  line-height: 1.6;
+}
+
+@media (max-width: 860px) {
+  .faq-section__inner {
+    grid-template-columns: 1fr;
+  }
+}

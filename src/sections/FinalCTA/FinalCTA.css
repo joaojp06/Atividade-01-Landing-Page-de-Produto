@@ -1,0 +1,29 @@
+.final-cta {
+  background: var(--c-black);
+  text-align: center;
+  padding-top: clamp(100px, 16vw, 200px);
+  padding-bottom: clamp(100px, 16vw, 200px);
+}
+
+.final-cta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.final-cta__headline {
+  font-family: var(--f-display);
+  font-weight: 900;
+  font-size: clamp(2.8rem, 9vw, 6rem);
+  line-height: 0.98;
+}
+
+.final-cta__text {
+  margin-top: 26px;
+  color: var(--c-grey);
+  font-size: 1.05rem;
+}
+
+.final-cta__inner .btn {
+  margin-top: 44px;
+}
