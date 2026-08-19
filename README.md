@@ -1,155 +1,181 @@
-# VANTA ONE
+👟 VANTA ONE
+<p align="center"> <strong>Built for every move.</strong> </p> <p align="center"> Landing page de um tênis urbano desenvolvido para uma atividade acadêmica. </p>
+👥 Integrantes
+Davidson Ferreira
+João Pedro
 
-Built for every move.
+📦 Sobre o produto
 
-## Integrantes
+O VANTA ONE é um projeto desenvolvido para uma atividade acadêmica. A ideia foi criar uma marca fictícia de tênis urbanos com uma proposta simples: desenvolver um modelo que pudesse ser usado em diferentes momentos do dia.
 
-- [Seu nome aqui]
-- [Nome da dupla aqui]
+A partir disso, criamos a VANTA, uma marca voltada para um público jovem e urbano, principalmente universitários e jovens profissionais que possuem uma rotina bastante dinâmica.
 
-## Sobre o produto
+O primeiro produto da marca é o VANTA ONE, um sneaker de visual minimalista, leve e versátil. O tênis possui amortecimento responsivo, cabedal respirável e solado pensado para o uso urbano.
 
-**VANTA** é uma marca fictícia de tênis urbanos premium, criada para esta atividade acadêmica.
-A proposta é simples: **um único tênis que acompanha o dia inteiro** — da faculdade ao trabalho,
-da academia ao rolê à noite — em vez de uma pessoa precisar trocar de calçado para cada
-compromisso.
+👟 Características
+	
+Modelo	VANTA ONE
+Peso	280g
+Amortecimento	VANTA Foam
+Cores	Black · Cloud · Volt
+Preço	R$ 499,90
+🧭 Jornada de construção
+💡 Ideia inicial
 
-O produto de lançamento é o **VANTA ONE**: um sneaker minimalista, leve (280g), com
-amortecimento responsivo (VANTA Foam), cabedal respirável e solado urbano durável, vendido em
-três variações de cor (Black, Cloud e Volt) por R$ 499,90.
+O briefing da atividade já apresentava a ideia principal da marca: criar um tênis que pudesse acompanhar diferentes momentos do dia, sem a necessidade de trocar de calçado dependendo da ocasião.
 
-O público-alvo é o mesmo perfil da geração universitária/jovem profissional urbano: pessoas que
-vivem em movimento e querem um único produto versátil, em vez de um guarda-roupa de tênis para
-cada ocasião.
+A partir dessa proposta, começamos a pensar em como transformar a ideia em uma identidade visual e em uma página que transmitisse essa sensação de praticidade e versatilidade.
 
-## Jornada de construção
+Uma das primeiras decisões foi trabalhar com uma estética mais minimalista. Optamos por utilizar principalmente preto, branco e tons de cinza, com o verde Volt (#D7FF3F) como cor de destaque.
 
-### Ideia inicial
+Também decidimos não utilizar fotografias de tênis de marcas existentes. Em vez disso, criamos uma ilustração própria do VANTA ONE em SVG, mantendo um estilo mais simples e coerente com a identidade visual escolhida.
 
-O ponto de partida do briefing já veio bastante definido: uma marca de tênis chamada VANTA, com
-o conceito central "um tênis para todos os momentos do dia" e uma referência visual explícita
-(Taste Labs, via Land-book). A partir daí, o papel da IA foi transformar esse conceito em um
-sistema de design completo — paleta, tipografia, composição de seções — e depois em código React
-funcional.
+🔎 Pesquisa e referências
 
-Duas decisões de enquadramento foram tomadas logo no início:
+Durante o desenvolvimento, utilizamos como uma das referências a página da Taste Labs no Land-book, indicada no briefing da atividade.
 
-1. **Não usar fotografia real de tênis.** Como o briefing pedia "protagonismo do produto" mas ao
-   mesmo tempo proibia usar imagens de marcas existentes (Nike, Adidas etc.) e não copiar
-   estruturas de outros sites, optamos por criar uma **ilustração vetorial autoral** do VANTA ONE
-   (SVG desenhado à mão, em estilo line-art) em vez de tentar usar fotos de banco de imagens —
-   que quase sempre trazem logos ou acabam parecendo genéricas.
-2. **Cor de destaque = "Volt".** Como o próprio produto já tem uma variante chamada "VANTA VOLT",
-   fazia sentido que a cor de destaque de toda a marca fosse um verde-limão elétrico (`#D7FF3F`)
-   — em vez de escolher uma cor à parte, a paleta nasceu do próprio nome do produto.
+A referência ajudou principalmente na definição da estética da página, especialmente na utilização de bastante espaço livre, textos grandes e uma quantidade reduzida de cores.
 
-### Pesquisa e referências
+Também pesquisamos algumas referências relacionadas a campanhas de tênis e produtos esportivos para entender melhor como apresentar o produto e destacar suas características.
 
-A referência oficial indicada no briefing foi a página da **Taste Labs no Land-book**
-(land-book.com/websites/98186) e o site institucional da Taste Labs. Usamos essas referências
-apenas para estudar:
+As referências serviram apenas como inspiração visual. O conteúdo, a identidade da VANTA e a organização da página foram desenvolvidos para este projeto.
 
-- como grandes blocos de tipografia + espaço negativo criam hierarquia sem precisar de muita cor;
-- como uma página consegue parecer "premium" com poucos elementos, bem executados;
-- a lógica de seções alternando texto denso e blocos quase vazios.
+🛠️ Ferramentas utilizadas
+Ferramenta	Uso no projeto
+⚛️ React 19	Desenvolvimento da aplicação
+⚡ Vite	Configuração e execução
+🎞️ Framer Motion	Animações e transições
+🎨 CSS	Estilização da interface
+🖼️ SVG	Ilustração do produto
+🧪 Playwright	Testes durante o desenvolvimento
+🔤 Google Fonts	Tipografia
+💻 VS Code	Desenvolvimento
 
-Não foi copiado nenhum texto, estrutura de seção 1-para-1, nem elementos de marca da Taste Labs.
-A transposição foi conceitual: pegamos a "sensação" (tipografia forte, muito respiro, poucas
-cores) e aplicamos a um contexto completamente diferente — sneakers e lifestyle urbano — usando
-layout, copy e paleta próprios da VANTA.
+O projeto foi desenvolvido utilizando CSS sem um framework de componentes. As principais cores, fontes e medidas foram organizadas em variáveis para facilitar alterações durante o desenvolvimento.
 
-Complementarmente, pesquisamos referências de campanhas de sneakers premium (estúdio escuro, luz
-dramática, tênis como "herói" da composição) para guiar a ilustração do produto e a estrutura da
-seção "Tecnologia" (camadas exploded-view), que é o elemento de assinatura visual deste projeto.
+As fontes utilizadas foram:
 
-### Ferramentas utilizadas
+Archivo — títulos e elementos de destaque;
+Inter — textos;
+JetBrains Mono — informações menores e etiquetas.
 
-- **React 19 + Vite** — base do projeto (`npm create vite@latest -- --template react`).
-- **Framer Motion** — animações de entrada (`whileInView`), respeitando `prefers-reduced-motion`.
-- **CSS puro** (variáveis/tokens em `styles/tokens.css`) — sem framework de UI, para manter
-  controle total do sistema tipográfico e da paleta.
-- **Google Fonts** — Archivo (display), Inter (corpo), JetBrains Mono (dados/labels).
-- **Claude (Anthropic)** — pair-programming completo: definição do sistema de design,
-  implementação de todos os componentes/seções, criação da ilustração SVG do tênis, testes
-  visuais automatizados e revisão de responsividade.
-- **Playwright + cairosvg** — usados durante o desenvolvimento (não fazem parte do produto
-  final) para gerar screenshots automáticos do protótipo em desktop e mobile e validar
-  visualmente cada seção antes de fechar o layout.
-- **VS Code / terminal** — edição e execução do projeto.
+Para as animações, utilizamos principalmente o Framer Motion nos efeitos de entrada dos elementos durante a rolagem da página.
 
-### Uso de IA
+Também utilizamos o Playwright durante o desenvolvimento para testar algumas interações e verificar o comportamento da página em diferentes tamanhos de tela.
 
-O desenvolvimento foi feito majoritariamente em conjunto com **Claude**, usado como par de
-desenvolvimento (pair programmer) e diretor de arte, não apenas como gerador de trechos de
-código isolados. Como o briefing já vinha extremamente detalhado (cores, copy, estrutura de
-seções, comportamento de cada interação), a IA seguiu o brief quase à risca, mas precisou tomar
-decisões autorais nos pontos que o briefing deixou em aberto — principalmente estilo tipográfico
-exato, composição da Hero e desenho da ilustração do produto.
+🤖 Uso de IA
 
-**Onde a IA ajudou bem:**
+A inteligência artificial foi utilizada durante boa parte do desenvolvimento do projeto, principalmente como apoio na programação e na construção da interface.
 
-- Estruturação do projeto em componentes reutilizáveis (`Button`, `Modal`, `FAQItem`,
-  `ColorSwitcher`, `SizeSelector`) que são usados em várias seções sem duplicação de código.
-- Criação de um design system consistente (tokens de cor/tipografia/espaçamento em CSS) antes de
-  escrever qualquer seção — isso evitou inconsistências visuais entre seções.
-- Implementação de interações que exigiam estado (troca de cor do tênis, seleção de tamanho,
-  FAQ expansível, modal de checkout) — tudo com React puro (`useState`), sem bibliotecas extras.
+Modelo utilizado
 
-**Onde o resultado não foi satisfatório de primeira e precisou de iteração:**
+Claude — Anthropic
 
-- A primeira versão da ilustração SVG do tênis (gerada manualmente, sem visualizar antes) ficou
-  parecendo "um pão de forma" em vez de um tênis — as proporções entre bico, gáspea e calcanhar
-  estavam erradas. Isso só foi percebido porque a IA renderizou o SVG para PNG (via `cairosvg`)
-  e revisou a imagem antes de integrar ao React. A partir dessa checagem visual, o desenho foi
-  refeito com um contraforte de calcanhar separado, cadarços e ilhoses mais definidos e uma
-  faixa de destaque na cor volt — chegando a um resultado que lê claramente como sneaker em
-  estilo line-art minimalista.
-- O servidor de preview (`vite preview`) caía entre chamadas de terminal porque cada execução de
-  comando roda em uma sessão nova — isso exigiu ajustar o fluxo de testes para sempre subir o
-  servidor e rodar o Playwright dentro do mesmo comando.
+O Claude foi utilizado para auxiliar na criação dos componentes React, organização do código, desenvolvimento da identidade visual e implementação de algumas das interações da página.
 
-**Decisões da IA que foram mantidas:** paleta preto/grafite/branco + volt; tipografia Archivo +
-Inter + JetBrains Mono; ilustração vetorial autoral em vez de fotografia; camadas interativas na
-seção de Tecnologia como elemento de assinatura.
+A IA também ajudou na criação inicial da ilustração do tênis em SVG. Durante esse processo, foi necessário fazer algumas alterações até chegar a um desenho que representasse melhor o produto.
 
-**Decisões que ficam abertas para a dupla personalizar:** nomes dos integrantes neste README,
-eventuais ajustes finos de copy, e qualquer preferência estética adicional (ex.: trocar a cor de
-destaque, ajustar o desenho do tênis) — o código foi estruturado (tokens centralizados,
-`ShoeIllustration` como componente único parametrizado por cor) exatamente para que esse tipo de
-ajuste seja rápido de fazer depois.
+Onde a IA ajudou
+🧩 Estruturação dos componentes da aplicação;
+💻 Organização do código;
+🎨 Desenvolvimento da interface;
+✨ Implementação de animações;
+🖱️ Criação das interações;
+👟 Criação e ajustes da ilustração em SVG;
+📱 Melhorias de responsividade;
+🔧 Identificação de problemas durante o desenvolvimento.
 
-### Evolução da solução
+Entre as funcionalidades desenvolvidas com esse auxílio estão:
 
-- **Ilustração do produto:** v1 (proporções erradas, lida como blob) → v2 (contraforte,
-  cadarços, faixa volt — versão usada no projeto final).
-- **Estrutura de dados:** todo o conteúdo textual/numérico (specs, camadas, cores, tamanhos,
-  reviews, FAQ) foi centralizado em `src/data/product.js` desde o início, em vez de ficar
-  espalhado pelos componentes — isso facilita trocar preço, textos ou adicionar uma cor nova sem
-  mexer em JSX.
-- **Seção de Tecnologia:** o briefing pedia apenas "usuário passa o mouse ou clica" — optamos por
-  reaproveitar a mesma ilustração do tênis (em vez de criar uma imagem "explodida" separada) e
-  simplesmente destacar/apagar a opacidade da camada correspondente ao passar o mouse. Isso
-  evitou duplicar assets e manteve a identidade visual consistente entre seções.
-- **CTA da Navbar vs. CTA da Oferta:** durante os testes automatizados de interação, o botão
-  "Comprar agora" da navbar (que só rola a página) foi confundido com o da seção de oferta (que
-  abre o modal) — o comportamento estava correto, mas evidenciou a importância de seletores
-  específicos para cada botão ao testar, o que já estava implementado, só precisou de testes mais
-  cuidadosos.
+troca de cores do tênis;
+seleção de tamanho;
+FAQ expansível;
+modal de compra;
+menu para dispositivos móveis;
+navegação entre as seções;
+animações durante o scroll;
+interação com as camadas do tênis na seção de tecnologia.
+O que precisou ser alterado
 
-### Resultado final
+Nem todas as primeiras sugestões ou resultados foram utilizados diretamente.
 
-O resultado é uma landing page de página única, 100% client-side, com interações reais (troca de
-cor, seleção de tamanho, FAQ expansível, modal de checkout simulado, camadas de tecnologia em
-hover/clique, navegação suave, menu mobile, scroll reveals e os dois CTAs da Hero), responsiva de
-mobile a desktop, testada visualmente em ambas as resoluções antes da entrega.
+A ilustração do tênis foi um dos principais exemplos. A primeira versão não apresentava muito bem o formato de um sneaker e acabou ficando com proporções pouco realistas. Por isso, fizemos alterações no desenho, principalmente no formato do calcanhar, cadarços, proporções e alguns detalhes do produto.
 
-**O que funcionou bem:** o sistema de design centralizado em tokens tornou fácil manter
-consistência visual em doze seções diferentes; a ilustração vetorial resolveu o problema de não
-ter fotos de produto sem comprometer a sensação "premium" pedida no briefing.
+Também foram feitos ajustes na organização de algumas seções e nas interações da página para que o resultado final ficasse mais próximo da ideia que tínhamos para o projeto.
 
-**Maior desafio:** desenhar uma ilustração de tênis reconhecível usando apenas paths SVG
-manuais, sem uma ferramenta de geração de imagem — exigiu iteração e checagem visual constante.
+Apesar do auxílio da IA, algumas decisões foram tomadas e ajustadas pela dupla, principalmente em relação às cores, organização das seções, aparência do tênis e funcionamento das interações.
 
-**O que seria melhorado com mais tempo:** refinar ainda mais os detalhes da ilustração (textura
-do solado, sombra mais realista), adicionar um efeito de parallax mais elaborado na Hero, e
-eventualmente oferecer uma segunda pose/ângulo do tênis para a seção de cores.
+🔄 Evolução da solução
+
+Durante o desenvolvimento, algumas partes do projeto foram modificadas até chegarmos à versão final.
+
+👟 Ilustração do produto
+
+A ilustração foi uma das principais partes que precisaram de ajustes. A primeira versão não apresentava muito bem o formato de um sneaker, então fizemos alterações nas proporções, no calcanhar, nos cadarços e em alguns detalhes do desenho.
+
+A versão final manteve o estilo de ilustração em SVG, mas passou a representar melhor o produto e ficou mais alinhada com a identidade visual da VANTA.
+
+🧪 Seção de tecnologia
+
+A seção de tecnologia também passou por algumas mudanças.
+
+A ideia inicial era apresentar as diferentes camadas do tênis de uma forma mais visual. Para evitar a criação de várias imagens diferentes, optamos por utilizar a própria ilustração do produto e destacar cada camada conforme o usuário interage com ela.
+
+Dessa forma, conseguimos criar uma interação sem precisar duplicar os elementos visuais do produto.
+
+📂 Organização do conteúdo
+
+Durante o desenvolvimento, também tivemos a preocupação de manter as informações do produto organizadas.
+
+Dados como preço, cores, tamanhos e características foram concentrados no arquivo:
+
+src/data/product.js
+
+
+Isso facilita alterações futuras sem precisar modificar o conteúdo diretamente em vários componentes.
+
+Também foram criados componentes reutilizáveis para elementos como:
+
+Button
+Modal
+FAQItem
+ColorSwitcher
+SizeSelector
+
+A ilustração do tênis também foi criada como um componente separado, permitindo alterar sua cor de acordo com a opção escolhida pelo usuário.
+
+📱 Responsividade
+
+Foram realizados testes em diferentes tamanhos de tela para ajustar a versão mobile e garantir que os principais elementos continuassem funcionando corretamente.
+
+Alguns elementos precisaram ser reorganizados para telas menores, principalmente o menu, textos e apresentação do produto.
+
+🏁 Resultado final
+
+O resultado final é uma landing page responsiva para a marca VANTA, desenvolvida em React.
+
+A página apresenta o produto, suas características, opções de cores e tamanhos, além de algumas interações para tornar a navegação mais dinâmica.
+
+✨ Principais funcionalidades
+🎨 Troca de cor do produto;
+📏 Seleção de tamanho;
+❓ FAQ interativo;
+🛒 Modal de compra;
+📱 Menu mobile;
+✨ Animações durante a navegação;
+🔍 Interação com as camadas do produto;
+🔗 Navegação suave entre as seções;
+📐 Layout responsivo;
+🛍️ CTAs para compra.
+
+O projeto foi testado em versões desktop e mobile para verificar a responsividade e o funcionamento das principais interações.
+
+📌 Avaliação
+
+O desenvolvimento do VANTA ONE permitiu trabalhar tanto a parte visual de uma página de produto quanto a implementação de uma aplicação utilizando React.
+
+Um dos principais desafios foi criar uma apresentação de produto interessante sem utilizar fotografias de tênis de marcas existentes. A criação da ilustração em SVG foi uma alternativa que acabou se encaixando bem na identidade escolhida.
+
+Se tivéssemos mais tempo, algumas partes poderiam ser aprimoradas, principalmente os detalhes da ilustração, as animações da página e a criação de outras visualizações do tênis.
+
+De forma geral, o projeto conseguiu transformar a ideia inicial do briefing em uma página funcional, responsiva e com uma identidade visual própria.
